@@ -3,17 +3,17 @@ from django.db import models
 class Test(models.Model):
     test_id = models.AutoField(max_length=10, primary_key=True)
     title = models.CharField(max_length=250)
-    description = models.CharField()
+    description = models.TextField()
 
 class AnalyzingTest(models.Model):
     test_id = models.ForeignKey(Test)
     num1 = models.IntegerField(max_length=5)
     num2 = models.IntegerField(max_length=5)
-    description = models.CharField()
+    description = models.TextField()
 
 class Question(models.Model):
     question_id = models.AutoField(max_length=10, primary_key=True)
-    description = models.CharField(max_length)
+    description = models.TextField()
     order = models.IntegerField(max_length=3)
     test_id = models.ForeignKey(Test)
 
@@ -28,7 +28,7 @@ class User(models.Model):
     login = models.CharField(max_length=100)
     password = models.CharField(max_length=100)
     name = models.CharField(max_length=200)
-    description = models.CharField()
+    description = models.TextField()
     email = models.CharField(max_length=100)
 
 class Testing(models.Model):
