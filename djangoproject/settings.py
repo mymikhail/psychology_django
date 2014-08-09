@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'psychology',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -45,7 +46,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'psychology'
 )
 
 ROOT_URLCONF = 'djangoproject.urls'
@@ -71,7 +71,7 @@ DATABASES = {
         'PASSWORD': '1',
         'HOST': 'mysql2.alwaysdata.com',
     }
-
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
