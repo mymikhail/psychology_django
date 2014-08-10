@@ -67,7 +67,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mmytarev_db',
-        'USER': 'mmytarev_v2',
+        'USER': 'mmytarev_2',
         'PASSWORD': '1',
         'HOST': 'mysql2.alwaysdata.com',
     }
