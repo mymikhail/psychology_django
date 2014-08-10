@@ -2,14 +2,14 @@ from django.contrib import admin
 from psychology.models import Test, AnalyzingTest
 
 
-class AnalyzingTestInline(admin.StackedInline):
+class AnalyzingTestInline(admin.TabularInline):
     model = AnalyzingTest
     extra = 3
 
 class TestAdmin(admin.ModelAdmin):
     fieldsets = [
-        ('Название теста',	{'fields': ['title']}),
-        ('Описание', 		{'fields': ['description'], 'classes': ['collapse']}),
+        ('title',	{'fields': ['title']}),
+        ('description', 		{'fields': ['description'], 'classes': ['collapse']}),
     ]
     inlines = [AnalyzingTestInline]
 
