@@ -66,10 +66,10 @@ DATABASES = {
 DATABASES = { 
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mmytarev_db',
-        'USER': 'mmytarev_2',
-        'PASSWORD': '1',
-        'HOST': 'mysql2.alwaysdata.com',
+        'NAME': 'mikhail_2',
+        'USER': 'mikhail',
+        'PASSWORD': 'mikhail',
+        'HOST': 'mysql1.alwaysdata.com',
     }
 }
 
